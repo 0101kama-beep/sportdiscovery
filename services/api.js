@@ -12,7 +12,7 @@ const apiService = {
       return response.data;
     } catch (error) {
       console.log("API ERROR:", error.response?.data);
-      console.log("STATUS:", error.response?.status);
+     
       throw error;
     }
   },

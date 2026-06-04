@@ -22,7 +22,7 @@ export default function Details() {
       
       <Stack.Screen 
         options={{ 
-          title: sport.name, 
+          title: sport?.name, 
           headerShown: true,
           headerStyle: { backgroundColor: '#09122C' },
           headerTintColor: '#fff',
@@ -30,7 +30,7 @@ export default function Details() {
       />
 
       <Image
-        source={{ uri: sport.image }}
+        source={{ uri: sport?.image }}
         style={styles.image}
       />
 
@@ -46,6 +46,18 @@ export default function Details() {
         <Text style={styles.description}>
           {sport.shortDescription}
         </Text>
+        <TouchableOpacity 
+          style={styles.galleryButton}
+          onPress={() => {
+            
+            router.push({
+              pathname: "/gallery", 
+              params: { sport: JSON.stringify(sport) } 
+            });
+          }}
+        >
+          <Text style={styles.galleryButtonText}>Voir la Galerie</Text>
+        </TouchableOpacity>
 
         <Text style={styles.sectionTitle}>
           About this sport
@@ -105,6 +117,18 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 24,
   },
+  galleryButton: {
+    backgroundColor: "#FFB703",
+    paddingVertical: 12,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 20,
+  },
+  galleryButtonText: {
+    color: "#09122C",
+    fontSize: 16,
+    fontWeight: "bold", }
   
  
 });

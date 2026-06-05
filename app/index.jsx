@@ -97,7 +97,7 @@ export default function HomeScreen() {
       <View style={styles.cardContent}>
         <View style={styles.cardHeader}>
           <Text style={styles.sportName}>
-            {item.name}
+            {item?.name}
           </Text>
 
           <Ionicons

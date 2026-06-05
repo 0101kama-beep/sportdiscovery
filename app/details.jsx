@@ -36,7 +36,7 @@ export default function Details() {
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          {sport.name}
+          {sport?.name}
         </Text>
 
         <Text style={styles.category}>

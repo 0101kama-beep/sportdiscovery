@@ -10,7 +10,6 @@ const { width } = Dimensions.get("window");
 export default function GalleryScreen() {
   const route = useRoute();
   
-
   const { sport: sportString } = route.params || {};
   
   let sport = null;
@@ -28,7 +27,7 @@ export default function GalleryScreen() {
       
       <Stack.Screen 
         options={{ 
-          title: sport?.name ? ` ${sport.name}` : "Galerie", 
+          title: sport?.name ? ` ${sport?.name}` : "Galerie", 
           headerShown: true,
           headerStyle: { backgroundColor: '#09122C' },
           headerTintColor: '#fff',

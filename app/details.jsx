@@ -70,7 +70,6 @@ export default function Details() {
     </ScrollView>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

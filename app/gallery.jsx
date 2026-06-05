@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Image, Text, View, ScrollView, StyleSheet, } from 'react-native';
 import { useRoute } from "@react-navigation/native";
@@ -79,3 +80,5 @@ const styles = StyleSheet.create({
     marginTop: 50,
   }
 });
+=======
+>>>>>>> e599f17fae495e0c02b2d311e15f286b3bd4b5df

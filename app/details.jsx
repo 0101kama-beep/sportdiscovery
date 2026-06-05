@@ -116,18 +116,27 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 24,
   },
-  galleryButton: {
-    backgroundColor: "#FFB703",
+  galleryButton:{
+    
+  backgroundColor: "#FFB703",
     paddingVertical: 12,
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "center",
+    textAlign:"center",
     marginBottom: 20,
+    width:200,
+
+
+
   },
-  galleryButtonText: {
-    color: "#09122C",
+  galleryButtonText:{
+  color: "#09122C",
     fontSize: 16,
-    fontWeight: "bold", }
-  
+    fontWeight: "bold",
+    textAlign:"center"
+    
+
+  },
  
 });
